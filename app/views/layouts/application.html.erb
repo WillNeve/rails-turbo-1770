@@ -11,6 +11,6 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= yield :head if content_for?(:head) %>
   </body>
 </html>
